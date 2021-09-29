@@ -1,1 +1,1 @@
-# testing-school-animals
+# Java homework 3
