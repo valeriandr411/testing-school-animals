@@ -3,6 +3,7 @@ package animals;
 import food.Food;
 import food.Grass;
 import food.WrongFoodException;
+import main.Aviary;
 
 /**
  * Абстрактный класс, реализующий плотоядного животного со свойством <b>satiety</b>.
@@ -12,8 +13,8 @@ import food.WrongFoodException;
  */
 public abstract class Carnivorous extends Animal {
     public static final int SATIETY_STEP = 10;
-    public Carnivorous(String name, int satiety){
-        super(name, satiety);
+    public Carnivorous(String name, int satiety, Aviary.AviarySize aviarySize){
+        super(name, satiety, aviarySize);
     }
     @Override
     public void eat(Food food) throws WrongFoodException {

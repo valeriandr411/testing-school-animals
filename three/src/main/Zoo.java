@@ -7,15 +7,15 @@ import java.util.ArrayList;
 
 public class Zoo {
     public static void main(String[] args) {
-        Cat cat = new Cat("Tom", 68);
-        Duck duck = new Duck("Emmy", 89);
-        Duck duck2 = new Duck("Alfie", 49);
-        Duck duck3 = new Duck("Charlie", 81);
-        Duck duck4 = new Duck("Daisy", 38);
-        Fish fish = new Fish("Felix", 58);
-        Rabbit rabbit = new Rabbit("Rex", 76);
-        Wolf wolf = new Wolf("Alex", 100);
-        Cow cow = new Cow("Marta", 99);
+        Cat cat = new Cat("Tom", 68, Aviary.AviarySize.MEDIUM);
+        Duck duck = new Duck("Emmy", 89, Aviary.AviarySize.EXTRA_SMALL);
+        Duck duck2 = new Duck("Alfie", 49, Aviary.AviarySize.SMALL);
+        Duck duck3 = new Duck("Charlie", 81, Aviary.AviarySize.SMALL);
+        Duck duck4 = new Duck("Daisy", 38, Aviary.AviarySize.SMALL);
+        Fish fish = new Fish("Felix", 58, Aviary.AviarySize.EXTRA_SMALL);
+        Rabbit rabbit = new Rabbit("Rex", 76, Aviary.AviarySize.MEDIUM);
+        Wolf wolf = new Wolf("Alex", 100, Aviary.AviarySize.MEDIUM);
+        Cow cow = new Cow("Marta", 99, Aviary.AviarySize.LARGE);
 
         Aviary<Carnivorous> carnivores = new Aviary<>();
         carnivores.setAviarySize(Aviary.AviarySize.LARGE);

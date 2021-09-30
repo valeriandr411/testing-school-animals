@@ -10,7 +10,6 @@ public class Aviary<T extends Animal> {
     private AviarySize aviarySize = AviarySize.EXTRA_SMALL;
 
     public T add(T animal) {
-        animal.setAviarySize();
         if (animal.getAviarySize().value > this.aviarySize.value) {
             System.out.println("Животное " + animal.getName() + " слишком большое для вольера!!!");
         } else {

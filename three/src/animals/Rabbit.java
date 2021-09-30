@@ -2,10 +2,11 @@ package animals;
 
 import behavior.Run;
 import behavior.Swim;
+import main.Aviary;
 
 public class Rabbit extends Herbivore implements Run, Swim {
-    public Rabbit(String name, int satiety) {
-        super(name, satiety);
+    public Rabbit(String name, int satiety, Aviary.AviarySize aviarySize) {
+        super(name, satiety, aviarySize);
     }
 
     @Override

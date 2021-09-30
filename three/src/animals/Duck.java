@@ -1,10 +1,11 @@
 package animals;
 
 import behavior.*;
+import main.Aviary;
 
 public class Duck extends Herbivore implements Fly, Swim, Run, Voice {
-    public Duck(String name, int satiety) {
-        super(name, satiety);
+    public Duck(String name, int satiety, Aviary.AviarySize aviarySize) {
+        super(name, satiety,aviarySize);
     }
 
     @Override

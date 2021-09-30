@@ -2,11 +2,12 @@ package animals;
 
 import behavior.Run;
 import behavior.Voice;
+import main.Aviary;
 
 public class Cow extends Herbivore implements Run, Voice {
 
-    public Cow(String name, int satiety) {
-        super(name, satiety);
+    public Cow(String name, int satiety, Aviary.AviarySize aviarySize) {
+        super(name, satiety, aviarySize);
     }
 
     @Override

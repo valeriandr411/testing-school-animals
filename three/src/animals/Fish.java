@@ -1,10 +1,11 @@
 package animals;
 
 import behavior.Swim;
+import main.Aviary;
 
 public class Fish extends Carnivorous implements Swim {
-    public Fish(String name, int satiety) {
-        super(name, satiety);
+    public Fish(String name, int satiety, Aviary.AviarySize aviarySize) {
+        super(name, satiety,aviarySize);
     }
 
     @Override

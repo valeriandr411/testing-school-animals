@@ -3,10 +3,11 @@ package animals;
 import behavior.Run;
 import behavior.Swim;
 import behavior.Voice;
+import main.Aviary;
 
 public class Cat extends Carnivorous implements Run, Swim, Voice {
-    public Cat(String name, int satiety){
-        super(name, satiety);
+    public Cat(String name, int satiety, Aviary.AviarySize aviarySize){
+        super(name, satiety,aviarySize);
     }
 
     @Override
